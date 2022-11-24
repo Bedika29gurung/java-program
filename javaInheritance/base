@@ -1,0 +1,19 @@
+class Base{
+    public void pshow(){
+        System.out.println("This is a parent class");
+    }
+}
+class Derived extends Base{
+    public void cshow(){
+        System.out.println("This is a child class");
+    }
+}
+public class Ans{
+    public static void main(String[] args){
+        Base b = new Base();
+        Derived d = new Derived();
+        b.pshow();
+        d.cshow();
+        d.pshow();
+        }
+}
